@@ -435,7 +435,9 @@ template {
     --dark-red: #611A0E;
     --main-gray: #1C1C1C;
     --transparent-light-grey: rgba(112, 112, 112, .1);
-    --transparent-section: #000000CF
+    --transparent-section: #000000CF;
+    --shadow: #00000029;
+    --footerP: #FFFFFFB8;
 }
 
 *::selection {
@@ -868,6 +870,75 @@ section.ourevents.lastProjects::after {
     ;
 }
 
+footer {
+    background-color: var(--main-gray);
+    box-shadow: .5px .5px 10px var(--shadow);
+    padding: 40px 0px 0px;
+    ;
+}
+
+footer .logo img {
+    width: 260px
+}
+
+footer h3 {
+    font-size: 19px;
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+footer h3 i {
+    color: var(--red)
+}
+
+footer p {
+    color: var(--footerP);
+    font-size: 18;
+}
+
+footer ul img {
+    width: 50px;
+}
+
+footer li i {
+    font-size: 20px;
+    color: var(--white)
+}
+
+footer ul:last-of-type {
+    padding-top: 20px;
+}
+
+footer .copyRight {
+    color: var(--white);
+    background: var(--black);
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: var(--white);
+    color: var(--red);
+    transition: all .6s linear;
+    z-index: 333;
+    box-shadow: .5px .5px 10px var(--shadow)
+}
+
+footer a i {
+    color: var(--white);
+    transition: all .5s ease-in-out;
+}
+
+footer a:hover i {
+    color: var(--red);
+}
+
 @media(max-width:767px) {
     header {
         background: linear-gradient( 183deg, var(--dark-gray), var(--dark-gray), var(--dark-gray)), url(../imgs/Mobile.jpg) center center no-repeat;
@@ -997,12 +1068,37 @@ section.ourevents.lastProjects::after {
         padding: 1rem .5rem;
     }
     .sponsors .carousel-inner {
-        gap: 2px
+        gap: 1px
     }
     .sponsors .carousel-item {
-        width: 90px;
+        width: 60px;
         transform: scaleZ(1.1);
         opacity: 0.5;
+    }
+    footer .logo img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 13;
+    }
+    footer ul img {
+        width: 40px;
+    }
+    footer li i {
+        font-size: 17px;
+    }
+    footer ul:last-of-type {
+        padding-top: 20px;
+    }
+    footer .copyRight {
+        font-size: 10px;
+    }
+    section.ourevents::after {
+        display: none;
     }
 }
 
@@ -1030,6 +1126,12 @@ section.ourevents.lastProjects::after {
     }
     .card-body {
         padding: 1rem .2rem;
+    }
+    footer h3 {
+        font-size: 13px;
+    }
+    footer p {
+        font-size: 13;
     }
 }
 
@@ -1152,6 +1254,28 @@ section.ourevents.lastProjects::after {
         width: 100px;
         transform: scaleZ(1.1);
         opacity: 0.5;
+    }
+    footer .logo img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    footer h3 {
+        font-size: 15px;
+    }
+    footer p {
+        font-size: 11;
+    }
+    footer ul img {
+        width: 50px;
+    }
+    footer li i {
+        font-size: 18px;
+    }
+    footer .copyRight {
+        font-size: 13px;
+    }
+    section.ourevents::after {
+        display: none;
     }
 }
 
