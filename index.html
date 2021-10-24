@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/main.Scss">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>CAT Reloaded</title>
 </head>
@@ -298,9 +297,6 @@
     </section>
 
 
-
-
-
     <!--our events section -->
     <section class="ourevents lastProjects">
 
@@ -380,22 +376,22 @@
                     <div id="Oursponsor" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
                         <div class="carousel-inner row justify-content-center">
-                            <div class="carousel-item active col-md-3 " data-bs-interval="1000">
+                            <div class="carousel-item active " data-bs-interval="1000">
                                 <img src="./imgs/triago.png">
                             </div>
-                            <div class="carousel-item col-md-3" data-bs-interval="2000">
-                                <img src="./imgs/triago.png">
-                            </div>
-
-                            <div class="carousel-item col-md-3" data-bs-interval="3000">
+                            <div class="carousel-item " data-bs-interval="2000">
                                 <img src="./imgs/triago.png">
                             </div>
 
-                            <div class="carousel-item col-md-3" data-bs-interval="4000">
+                            <div class="carousel-item " data-bs-interval="3000">
                                 <img src="./imgs/triago.png">
                             </div>
 
-                            <div class="carousel-item col-md-3" data-bs-interval="5000">
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="./imgs/triago.png">
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <img src="./imgs/triago.png">
                             </div>
                         </div>
@@ -408,9 +404,64 @@
 
 
     <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 logo  py-2 justify-content-sm-center d-flex">
+                    <img src="./imgs/navLogo.svg" class="img-responsive img-fluid">
+                </div>
+                <div class="col-md-3  py-2">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> LOCATION
+                    </h3>
+                    <p>
+                        Faculty of Engineering, Mansoura University, Dakhliya, Egypt
+                    </p>
+                </div>
 
+                <div class="col-md-3 col-5  py-2">
+                    <h3 class="text-sm-center">
+                        ANNUAL PARTNER
+                    </h3>
+                    <ul class="list-unstyled d-flex justify-content-sm-center gap-1 flex-row ">
+                        <li><img src="./imgs/triago.png" class="img-responsive img-fluid"></li>
+                        <li><img src="./imgs/triago.png" class="img-responsive img-fluid"></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 py-2 col-5">
+                    <h3 class="px-lg-3 px-3 px-sm-4 px-md-0">
+                        FOLLOW US
+                    </h3>
+                    <ul class="list-unstyled d-flex gap-3 flex-row">
+
+                        <li>
+                            <a href="https://www.facebook.com/CATReloaded?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/CATReloaded"><i class="fab fa-twitter"></i></a> </li>
+                        <li> <a href="https://www.youtube.com/user/C4TReloaded"><i class="fab fa-youtube"></i></a> </li>
+                        <li> <a href="https://github.com/CATReloaded"><i class="fab fa-github"></i></a> </li>
+
+                        <li><a href="https://www.linkedin.com/company/cat-reloaded/"><i class="fab fa-linkedin-in"></i></a></li>
+
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="copyRight text-center">
+            copyRight &copy; 2021 All Right Reserved by CATReloaded Technical
+        </div>
     </footer>
 
+
+    <button type="button" class="btn btn-floating btn-md" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script>
@@ -422,6 +473,8 @@
         window.onscroll = function() {
             myFunction();
             Counter();
+            scrollFunction();
+
         };
 
         function myFunction() {
@@ -475,6 +528,27 @@
                     clearTimeout(inter);
                 }
             }, duration);
+        }
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>
