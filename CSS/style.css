@@ -939,6 +939,187 @@ footer a:hover i {
     color: var(--red);
 }
 
+header.about {
+    width: 100%;
+    height: 430px;
+    background: var(--white);
+    position: relative;
+}
+
+header.about .row>div:first-of-type {
+    z-index: 2;
+    padding: 50px 0px;
+    ;
+}
+
+header.about .row>div:first-of-type img {
+    width: 70px;
+    display: block;
+    margin-top: 100px;
+}
+
+header.about .row>div:last-of-type::after,
+header.about .row>div:first-of-type::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 65px;
+    z-index: 2;
+    background: url(../imgs/black\ dots.svg) center no-repeat;
+    background-size: cover;
+    height: 160px;
+    top: 50%;
+    right: 0px;
+    transform: scalex(.88)
+}
+
+header.about .row>div:last-of-type::after img,
+header.about .row>div:first-of-type::after img {
+    width: 45px;
+}
+
+header.about .row>div:first-of-type::after {
+    top: 30%;
+    left: 0px;
+    filter: invert(1);
+}
+
+header.about .row>div:last-of-type img {
+    max-width: 70%;
+    display: block;
+    margin-top: 100px;
+}
+
+header.about::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 57%;
+    height: 100%;
+    left: -104px;
+    z-index: 1;
+    top: 0;
+    transform: skewX( 326deg);
+    background: linear-gradient(174deg, var(--red), var(--dark-red))
+}
+
+header.about h1 {
+    color: var(--white);
+    font-size: 52px;
+    font-weight: 700
+}
+
+header.about h1 span {
+    color: var(--black);
+}
+
+section.events {
+    padding-bottom: 100px;
+    ;
+}
+
+section.events .carousel-indicators {
+    bottom: -50px;
+}
+
+.ourevents.events .carousel-indicators [data-bs-target] {
+    background-color: transparent;
+}
+
+.ourevents.events .carousel-indicators li.active {
+    color: var(--red)!important;
+}
+
+.ourevents.events .carousel-indicators li,
+.ourevents.events .carousel-indicators button {
+    text-align: center;
+    text-indent: 0px;
+    color: var(--dark-gray);
+    border-radius: 0%;
+    background-color: transparent!important;
+    opacity: 1;
+    border: none;
+}
+
+.ourevents.events .carousel-indicators button {
+    filter: invert(1);
+    width: 40px;
+    height: 30px;
+    transition: all .2s linear
+}
+
+.ourevents.events .carousel-indicators button:hover {
+    filter: invert(71%) sepia(51%) saturate(2912%) hue-rotate( 356deg) brightness(82%) contrast(97%);
+}
+
+.ourevents.events::after,
+.ourevents.events::before {
+    display: none;
+}
+
+.events .dots {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+.events .dots img {
+    z-index: 1;
+}
+
+.events {
+    z-index: 3;
+}
+
+.events .dots img:first-of-type {
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.events .dots img:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.events .dots img:nth-of-type(3) {
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+
+.events .dots img:nth-of-type(4) {
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.events .dots img:nth-of-type(5) {
+    position: absolute;
+    left: 0;
+    top: 60%;
+}
+
+.events .dots img:nth-of-type(6) {
+    position: absolute;
+    right: 0;
+    top: 60%;
+}
+
+.events .dots img:nth-of-type(7) {
+    position: absolute;
+    left: 0;
+    top: 80%;
+}
+
+.events .dots img:nth-of-type(8) {
+    position: absolute;
+    right: 0;
+    top: 80%;
+}
+
 @media(max-width:767px) {
     header {
         background: linear-gradient( 183deg, var(--dark-gray), var(--dark-gray), var(--dark-gray)), url(../imgs/Mobile.jpg) center center no-repeat;
@@ -1100,6 +1281,37 @@ footer a:hover i {
     section.ourevents::after {
         display: none;
     }
+    header.about .row>div:first-of-type img {
+        width: 50px;
+        margin-top: 50px;
+    }
+    header.about {
+        height: 250px;
+    }
+    header.about .row>div:last-of-type::after,
+    header.about .row>div:first-of-type::after {
+        display: none;
+    }
+    header.about .row>div:last-of-type img {
+        max-width: 80%;
+    }
+    header.about::after {
+        width: 70%;
+        left: -104px;
+    }
+    header.about h1 {
+        font-size: 20px;
+    }
+    .events .dots {
+        display: none
+    }
+}
+
+@media(max-width:480px) {
+    header.about::after {
+        width: 80%;
+        left: -104px;
+    }
 }
 
 @media(max-width:351px) {
@@ -1132,6 +1344,16 @@ footer a:hover i {
     }
     footer p {
         font-size: 13;
+    }
+    header.about::after {
+        width: 83%;
+        left: -104px;
+    }
+    header.about h1 {
+        font-size: 17px;
+    }
+    header.about .row>div:last-of-type img {
+        max-width: 83%;
     }
 }
 
@@ -1277,9 +1499,30 @@ footer a:hover i {
     section.ourevents::after {
         display: none;
     }
+    header.about {
+        height: 400px;
+    }
+    header.about .row>div:first-of-type img {
+        width: 50px;
+        margin-top: 100px;
+    }
+    header.about .row>div:last-of-type::after,
+    header.about .row>div:first-of-type::after {
+        width: 55px;
+    }
+    header.about .row>div:last-of-type img {
+        max-width: 79%;
+    }
+    header.about::after {
+        width: 63%;
+        left: -104px;
+    }
+    header.about h1 {
+        font-size: 40px;
+    }
 }
 
-@media(min-width:993px) and (max-width:1200px) {
+@media(min-width: 993px) and (max-width: 1200px) {
     .About {
         padding: 50px 0px 40px;
     }
@@ -1295,5 +1538,26 @@ footer a:hover i {
     }
     .About img {
         width: 350px
+    }
+    header.about {
+        height: 400px;
+    }
+    header.about .row>div:first-of-type img {
+        width: 50px;
+        margin-top: 100px;
+    }
+    header.about .row>div:last-of-type::after,
+    header.about .row>div:first-of-type::after {
+        width: 60px;
+    }
+    header.about .row>div:last-of-type img {
+        max-width: 75%;
+    }
+    header.about::after {
+        width: 63%;
+        left: -104px;
+    }
+    header.about h1 {
+        font-size: 48px;
     }
 }
