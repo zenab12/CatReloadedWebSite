@@ -11,7 +11,7 @@ window.onscroll = function() {
 };
 var fired = false;
 window.addEventListener("scroll", function() {
-    if (window.pageYOffset >= achievements.offsetTop - 100 && fired === false) {
+    if (window.pageYOffset >= achievements.offsetTop - 150 && fired === false) {
         Counter();
         fired = true;
     }
