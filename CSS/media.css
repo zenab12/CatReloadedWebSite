@@ -439,7 +439,13 @@
         font-size: 14px;
     }
     .sponsors .row .col-md-10 {
-        margin-left: 16px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:400px) {
+    .sponsors .row .col-md-10 .carousel {
+        margin-right: -10px;
     }
 }
 
@@ -515,6 +521,9 @@
     section.Board li {
         max-width: 130px;
         padding: 0px;
+    }
+    .sponsors .row .col-md-10 .carousel {
+        margin-right: 0px;
     }
 }
 
