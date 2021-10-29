@@ -2,13 +2,20 @@ let nav = document.getElementById("nav");
 let header = document.querySelector("header");
 let logo = document.querySelector(".navbar-brand img")
 let sticky = nav.offsetHeight;
+let achievements = document.querySelector('.ourachievments');
 
 window.onscroll = function() {
     myFunction();
-    Counter();
     scrollFunction();
 
 };
+var fired = false;
+window.addEventListener("scroll", function() {
+    if (window.pageYOffset >= achievements.offsetTop - 100 && fired === false) {
+        Counter();
+        fired = true;
+    }
+}, true)
 
 function myFunction() {
     if (window.pageYOffset >= sticky) {
@@ -25,32 +32,18 @@ function myFunction() {
 }
 
 let imgSession = document.querySelector('.ourachievments li img');
-/*
-        imgSession.onmouseover = function() {
-            this.setAttribute('src', './imgs/seessions.svg');
-            this.style.transition = "all .5s ease-in-out"
-        };
-        imgSession.onmouseleave = function() {
-            this.style.transition = "all .5s ease-in-out"
-            this.setAttribute('src', './imgs/Layer 2.svg');
-        };
-*/
-
 const counters = document.querySelectorAll('.ourachievments li span');
 // Declate variable
 var timer;
-let achievements = document.querySelector('.ourachievments');
 
 function Counter() {
-    if (window.pageYOffset >= achievements.offsetTop + 500) {
-        achievements.style.display = "flex";
-        countUp(counters[0], 0, 15, 60);
-        countUp(counters[1], 0, 7, 70);
-        countUp(counters[2], 0, 50, 30);
-        countUp(counters[3], 0, 5, 30);
-        countUp(counters[4], 0, 50, 40);
-        countUp(counters[5], 0, 200, 10);
-    }
+    achievements.style.display = "flex";
+    countUp(counters[0], 0, 15, 60);
+    countUp(counters[1], 0, 7, 70);
+    countUp(counters[2], 0, 50, 30);
+    countUp(counters[3], 0, 5, 30);
+    countUp(counters[4], 0, 50, 40);
+    countUp(counters[5], 0, 200, 10);
 }
 
 
@@ -83,8 +76,3 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-$(document.ready(function() {
-    $('#carouselExampleDark, #latestProject, #Oursponsor').carousel();
-
-}))
