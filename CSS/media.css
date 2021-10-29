@@ -149,7 +149,7 @@
     }
     .ourevents h5,
     .lastProjects h5 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .card-body {
         padding: 1rem .5rem;
@@ -432,6 +432,9 @@
     section.Hierarchy li h4,
     section.Board h4 {
         font-size: 14px;
+    }
+    .sponsors .row .col-md-10 {
+        margin-left: 16px;
     }
 }
 

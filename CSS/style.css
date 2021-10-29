@@ -208,7 +208,7 @@ nav.errornav {
 }
 
 .form-control:focus {
-    color: var(--red);
+    color: var(--main-gray);
     background-color: #fff;
     border-color: transparent;
     outline: 0;
@@ -396,7 +396,7 @@ h2::after {
 .lastProjects .card p {
     color: var(--bit-darkgrey);
     font-weight: 400;
-    font-size: 18.87px;
+    font-size: 16.87px;
 }
 
 .ourevents .carousel-indicators,
@@ -971,7 +971,7 @@ section.error {
 }
 
 .technical {
-    background: var(--transparent-grey);
+    background: var(--transparent-light-grey);
 }
 
 .non-technical .collapse h2::after,
@@ -1015,6 +1015,7 @@ section.error {
 
 .technical .content {
     margin-bottom: 50px;
+    color: var(--bit-darkgrey)
 }
 
 .non-technical::before,
@@ -1078,7 +1079,7 @@ section.error {
     border-radius: 2.6px;
     box-shadow: .5px .5px 10px var(--shadow);
     padding: 13px 10px;
-    color: var(--red);
+    color: var(--main-gray);
     position: relative;
 }
 
@@ -1127,6 +1128,10 @@ section.Board li:hover img {
     filter: saturate(1);
 }
 
+section.Hierarchy li.active img {
+    box-shadow: 1px 1px 13px var(--red);
+}
+
 section.Hierarchy img {
     max-width: 200px;
     max-height: 170px;
@@ -1164,4 +1169,46 @@ section.Board h2::after {
 
 section.Board .row:first-of-type {
     margin: 60px auto;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: linear-gradient(180deg, var(--transparent-section), var(--main-gray));
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--red), var(--dark-red));
+    background: linear-gradient(180deg, var(--bit-darkgrey), var(--bit-darkergrey));
+    border-radius: 1px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 5, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    filter: invert(1)
+}
+
+.navbar-light.sticky .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 18, 5118, 1.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e ");
+    filter: hue-rotate(130deg)
+}
+
+footer .row div:last-of-type ul li {
+    margin-left: 2.7px;
 }
