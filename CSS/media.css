@@ -172,6 +172,11 @@
     section.Hierarchy::after {
         display: none;
     }
+    a.outline-cat-button {
+        font-size: 13px;
+        padding: 6px;
+        ;
+    }
     /*Sponsors*/
     .sponsors h2::after {
         width: 130px;
