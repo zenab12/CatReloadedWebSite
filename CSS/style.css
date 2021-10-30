@@ -302,7 +302,7 @@ h2::after {
     margin: 0px auto;
     text-align: center;
     color: var(--white);
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive;*/
 }
 
 .ourachievments h2::after,
