@@ -353,6 +353,12 @@
     section.Board ul {
         margin-bottom: 20px;
     }
+    footer .row div:last-of-type ul li {
+        margin-left: 3.4px;
+    }
+    footer .row div:nth-of-type(3) ul li {
+        margin-left: 3.4px;
+    }
 }
 
 @media (max-width: 576px) {

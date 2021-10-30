@@ -1210,7 +1210,11 @@ html {
 }
 
 footer .row div:last-of-type ul li {
-    margin-left: 2.7px;
+    margin-left: 2.6px;
+}
+
+footer .row div:nth-of-type(3) ul li {
+    margin-left: 3px;
 }
 
 .lastProjects .card .col-md-12 {
