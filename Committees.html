@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAT Reloaded Team in Mansoura University">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/titleCatLogo.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -13,6 +12,8 @@
     <link href="./CSS/Normalize.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/media.css">
 
@@ -71,11 +72,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 col-sm-6 d-flex flex-column gap-2 justify-content-center">
-                    <img class="img-responsive align-self-center" src="./imgs/catLogo.svg" alt="catlogo">
-                    <h1> <span>Committees</span></h1>
+                    <img class="img-responsive align-self-center  wow animate__slideInDown" src="./imgs/catLogo.svg" alt="catlogo" data-wow-duration="1.5s">
+                    <h1 class="wow animate__slideInUp" data-wow-duration="1.5s"> <span>Committees</span></h1>
                 </div>
                 <div class="col-6 d-flex flex-column gap-2 justify-content-center">
-                    <img class="img-responsive align-self-center img-fluid" src="./imgs/undraw_teamwork_hpdk.svg" alt="...">
+                    <img class="img-responsive align-self-center img-fluid wow animate__slideInUp" src="./imgs/undraw_teamwork_hpdk.svg" alt="..." data-wow-duration="1.5s">
                 </div>
             </div>
         </div>
@@ -86,26 +87,26 @@
         <div class="container">
             <div class="row justify-content-center align-items-center gap-0">
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#PR">
+                    <div class="card justify-content-center align-items-center d-flex flex-column wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#PR">
                         <h3 class='pt-4 pb-2'>PR&FR</h3>
                         <img src='./imgs/pr&fr.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column active" data-bs-target="#Hr">
+                    <div class="card justify-content-center align-items-center d-flex flex-column active wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#Hr">
                         <h3 class='pt-4 pb-2'>HR</h3>
                         <img src='./imgs/hr.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#Logistics">
+                    <div class="card justify-content-center align-items-center d-flex flex-column wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#Logistics">
                         <h3 class='pt-4 pb-2'>Logistics</h3>
                         <img src='./imgs/logistic.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#Media">
+                    <div class="card justify-content-center align-items-center d-flex flex-column wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#Media">
                         <h3 class='pt-4 pb-2'>Media</h3>
                         <img src='./imgs/media.svg' class="img-responsive img-fluid" alt="...">
                     </div>
@@ -115,7 +116,7 @@
 
             <div class="row content">
                 <div class="col-12">
-                    <div class="collapse" id="PR">
+                    <div class="collapse wow animate__fadeIn" data-wow-duration="1.5s " id="PR">
                         <h2>PR&FR Circle</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -125,7 +126,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="collapse show" id="Hr">
+                    <div class="collapse show  wow animate__fadeIn" data-wow-duration="1.5s" id="Hr">
                         <h2>HR Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -133,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="Logistics">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s " id="Logistics">
                         <h2>Logistics Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -141,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="Media">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s " id="Media">
                         <h2>Media Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -159,30 +160,30 @@
 
 
     <section class="technical">
-        <h2 class="text-center"> <span>CAT</span> Technical Circles</h2>
+        <h2 class="text-center  wow animate__fadeIn" data-wow-duration="1.5s"> <span>CAT</span> Technical Circles</h2>
 
         <div class="container">
             <div class="row cards justify-content-center align-items-center gap-0">
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#frontEnd">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#frontEnd">
                         <h3 class='pt-4 pb-2'>Front-End</h3>
                         <img src='./imgs/front-end.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column active" data-bs-target="#backEnd">
+                    <div class="card justify-content-center align-items-center d-flex flex-column active  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#backEnd">
                         <h3 class='pt-4 pb-2'>Back-End</h3>
                         <img src='./imgs/back-end.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column ui" data-bs-target="#UI">
+                    <div class="card justify-content-center align-items-center d-flex flex-column ui  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#UI">
                         <h3 class='pt-4 pb-3'>UI/UX & Graphic</h3>
                         <img src='./imgs/graphic.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column game" data-bs-target="#Game">
+                    <div class="card justify-content-center align-items-center d-flex flex-column game  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#Game">
                         <h3 class='pt-4 pb-2'>Game Development</h3>
                         <img src='./imgs/Component 86 – 1.svg' class="img-responsive img-fluid" alt="...">
                     </div>
@@ -190,7 +191,7 @@
             </div>
             <div class="row content">
                 <div class="col-12">
-                    <div class="collapse" id="frontEnd">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="frontEnd">
                         <h2>Front-End Circle</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -201,7 +202,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="collapse show" id="backEnd">
+                    <div class="collapse show  wow animate__fadeIn" data-wow-duration="1.5s" id="backEnd">
                         <h2>Back-End Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -211,7 +212,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="UI">
+                    <div class="collapse wow animate__fadeIn" data-wow-duration="1.5s " id="UI">
                         <h2>UI/UX & Graphic Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -221,7 +222,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="Game">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="Game">
                         <h2>Game Development Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -235,25 +236,25 @@
 
             <div class="row cards justify-content-center align-items-center gap-0">
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#android">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#android">
                         <h3 class='pt-4 pb-2'>Android</h3>
                         <img src='./imgs/Android.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#flutter">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#flutter">
                         <h3 class='pt-4 pb-2'>Flutter</h3>
                         <img src='./imgs/flutter.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#ios">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#ios">
                         <h3 class='pt-4 pb-2'>IOS</h3>
                         <img src='./imgs/ios.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#security">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#security">
                         <h3 class='pt-4 pb-2'>Security</h3>
                         <img src='./imgs/security.svg' class="img-responsive img-fluid" alt="...">
                     </div>
@@ -261,7 +262,7 @@
             </div>
             <div class="row content">
                 <div class="col-12">
-                    <div class="collapse" id="android">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="android">
                         <h2>Android Circle</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -272,7 +273,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="collapse" id="flutter">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="flutter">
                         <h2>Flutter Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -282,7 +283,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="ios">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s " id="ios">
                         <h2>IOS Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -292,7 +293,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="collapse " id="security">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="security">
                         <h2>Security Development Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -307,13 +308,13 @@
 
             <div class="row cards justify-content-center align-items-center gap-0">
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#computerscience">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#computerscience">
                         <h3 class='pt-4 pb-2'>Computer Science</h3>
                         <img src='./imgs/front-end.svg' class="img-responsive img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="card justify-content-center align-items-center d-flex flex-column" data-bs-target="#datascience">
+                    <div class="card justify-content-center align-items-center d-flex flex-column  wow animate__fadeIn" data-wow-duration="1.5s" data-bs-target="#datascience">
                         <h3 class='pt-4 pb-2'>Data Science</h3>
                         <img src='./imgs/back-end.svg' class="img-responsive img-fluid" alt="...">
                     </div>
@@ -322,7 +323,7 @@
             </div>
             <div class="row content">
                 <div class="col-12">
-                    <div class="collapse" id="computerscience">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="computerscience">
                         <h2>Computer Science Circle</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis? Lorem ipsum dolor sit amet consectetur adipisicing
@@ -333,7 +334,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="collapse" id="datascience">
+                    <div class="collapse  wow animate__fadeIn" data-wow-duration="1.5s" id="datascience">
                         <h2>Data Sience Circle</h2>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit soluta libero quidem similique facere quas ullam culpa. In vel totam dignissimos quidem nisi a consequatur harum, minima labore magnam. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Sequi sunt veniam odio vel a ut esse, fuga ab eius laborum impedit iste molestiae itaque error ad corporis? Dignissimos, corporis perferendis?
@@ -478,6 +479,10 @@
                 }
             })
         });
+    </script>
+    <script src="./js/wow.min.js "></script>
+    <script>
+        new WOW().init();
     </script>
 
 </body>
