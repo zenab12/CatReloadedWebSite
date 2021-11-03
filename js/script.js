@@ -11,7 +11,7 @@ window.onscroll = function() {
 };
 var fired = false;
 window.addEventListener("scroll", function() {
-    if (window.pageYOffset >= achievements.offsetTop - 150 && fired === false) {
+    if (window.pageYOffset >= achievements.offsetTop - 200 && fired === false) {
         Counter();
         fired = true;
     }
@@ -57,7 +57,6 @@ function countUp(selector, min, max, duration) {
 }
 
 let mybutton = document.getElementById("btn-back-to-top");
-
 
 function scrollFunction() {
     if (
