@@ -1273,3 +1273,26 @@ footer .row div:nth-of-type(3) ul li {
 .btn:focus {
     box-shadow: .4px .4px 5px var(--transparent-red);
 }
+
+section {
+    overflow: hidden;
+}
+
+[class^="hvr-"] {
+    background: var(--white);
+    color: #666;
+}
+
+.navbar-light.sticky .hvr-shutter-in-vertical:before,
+.outline-cat-button .hvr-shutter-in-vertical:before {
+    background: transparent;
+}
+
+.hvr-shutter-in-vertical:before {
+    background: linear-gradient(180deg, var(--light-white), var(--transparent-grey));
+}
+
+.hvr-shutter-in-vertical,
+.hvr-underline-from-left:before {
+    background: linear-gradient(180deg, var(--red), var(--dark-red));
+}
