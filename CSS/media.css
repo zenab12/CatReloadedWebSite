@@ -374,6 +374,12 @@
         left: 27%;
         top: 100px;
     }
+    .loader::before {
+        left: -290px;
+    }
+    .loader::after {
+        right: -387px;
+    }
 }
 
 @media (max-width: 576px) {
