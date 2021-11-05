@@ -75,3 +75,21 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+$(function() {
+
+    $(window).on('load', function() {
+
+        $('.loader').find($('img')).fadeOut(3500, function() {
+            $('body').css({ "overflow": "auto" });
+            $(this).parent().remove();
+            $('.mainheader').find($('.overlay')).addClass("animate__backInUp");
+            $('.About').find($('.leftanimate')).addClass("animate__fadeInLeft")
+
+        });
+
+    });
+
+
+})
