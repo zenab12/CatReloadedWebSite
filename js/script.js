@@ -81,7 +81,7 @@ $(function() {
 
     $(window).on('load', function() {
 
-        $('.loader').find($('img')).fadeOut(3500, function() {
+        $('.loader').find($('img')).fadeOut(1500, function() {
             $('body').css({ "overflow": "auto" });
             $(this).parent().remove();
             $('.mainheader').find($('.overlay')).addClass("animate__backInUp");
