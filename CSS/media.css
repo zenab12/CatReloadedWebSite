@@ -380,9 +380,6 @@
     .loader::after {
         right: -387px;
     }
-    .card-body {
-        height: 300px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -405,9 +402,6 @@
         margin: 100px auto 200px;
         left: 24%;
         top: 100px;
-    }
-    .card-body {
-        height: 340px;
     }
 }
 
@@ -491,9 +485,6 @@
 @media(max-width:400px) {
     .sponsors .row .col-md-10 .carousel {
         margin-right: -10px;
-    }
-    .card-body {
-        height: 390px;
     }
 }
 
@@ -601,9 +592,6 @@
     header.about.aboutus {
         height: 196px;
     }
-    .card-body {
-        height: 430px;
-    }
 }
 
 @media(max-width:290px) {
@@ -655,9 +643,6 @@
     section.Board li {
         max-width: 90px;
         padding: 0px;
-    }
-    .card-body {
-        height: 460px;
     }
 }
 
@@ -899,9 +884,6 @@
         left: 32%;
         top: 100px;
     }
-    .card-body {
-        height: 320px;
-    }
 }
 
 @media(min-width: 993px) and (max-width: 1200px) {
@@ -1048,9 +1030,6 @@
         margin: 100px auto 200px;
         left: 37%;
         top: 100px;
-    }
-    .card-body {
-        height: 320px;
     }
 }
 
