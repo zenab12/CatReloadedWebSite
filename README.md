@@ -1,3 +1,3 @@
 # CatReloadedWebSite
-![](/main/imgs/CAT_Home.png)
+![](/imgs/CAT_Home.png)
 
