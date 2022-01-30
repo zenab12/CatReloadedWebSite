@@ -1,3 +1,3 @@
 # CatReloadedWebSite
-![](https://myoctocat.com/assets/images/base-octocat.svg)
+![](./main/img/CAT_Home.png)
 
